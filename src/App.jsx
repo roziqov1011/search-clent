@@ -15,7 +15,7 @@ const test = (e) =>{
 }
 
 useEffect(()=>{
-  fetch(`http://localhost:9000/?=${filter}`)
+  fetch(`https://searchserverrr.herokuapp.com/?=${filter}`)
   .then(res => res.json())
   .then(data => setFoundUser(data))
 }, [filter])
